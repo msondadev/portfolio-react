@@ -1,0 +1,1 @@
+export const Home = () => <div><h1>Inicio</h1><p>Bienvenido a mi portfolio.</p></div>;

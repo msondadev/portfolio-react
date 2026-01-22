@@ -1,0 +1,1 @@
+export const About = () => <div><h1>Sobre Mí</h1><p>Soy estudiante de Desarrollo de Software...</p></div>;

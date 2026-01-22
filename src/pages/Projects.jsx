@@ -1,0 +1,1 @@
+export const Projects = () => <div><h1>Proyectos</h1><p>Aquí verás mis trabajos.</p></div>;
