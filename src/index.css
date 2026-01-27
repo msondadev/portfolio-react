@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700;800&display=swap');
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
   line-height: 1.5;
   font-weight: 400;
+
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --text-gradient: linear-gradient(to right, #30CFD0 0%, #330867 100%);
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -25,6 +29,7 @@ html, body {
 body {
   min-width: 320px;
   min-height: 100vh;
+  font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -34,6 +39,11 @@ a {
 }
 a:hover {
   color: #535bf2;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, button, .btn {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700; /* Para que los títulos tengan fuerza */
 }
 
 h1 {

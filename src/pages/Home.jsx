@@ -20,7 +20,9 @@ export const Home = () => {
   return (
     <Container>
       <HeroContainer>
-        <Title>¡Hola! Soy Martin</Title>
+        <h1 className="display-2 fw-bold mb-3">
+          Hola, soy <span className="text-gradient">Martin Sonda</span>
+        </h1>
         <h2 className={`mb-4 ${isDarkMode ? 'text-light' : 'text-dark'}`}>
           Desarrollador de Software en formación
         </h2>

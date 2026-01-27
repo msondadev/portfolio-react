@@ -58,7 +58,12 @@ export const Contact = () => {
               </Form.Group>
 
               <div className="d-grid">
-                <Button variant={isDarkMode ? "outline-light" : "primary"} type="submit" size="lg" disabled={loading}>
+                <Button 
+                  className={isDarkMode ? "btn-gradient" : "btn-gradient"} // Puedes usar el mismo para ambos o variar
+                  type="submit" 
+                  size="lg" 
+                  disabled={loading}
+                >
                   {loading ? 'Enviando...' : 'Enviar Mensaje'}
                 </Button>
               </div>

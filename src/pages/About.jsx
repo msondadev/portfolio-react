@@ -26,7 +26,7 @@ export const About = () => {
         {/* Columna Izquierda: Imagen y redes rápidas */}
         <Col md={5} className="text-center mb-4 mb-md-0">
           <ProfileImage 
-            src="/mds-px4.jpg" // Aquí pondrás tu avatar después
+            src="/mds-px7.1.jpg" // Aquí pondrás tu avatar después
             alt="Tu Nombre" 
           />
           <div className="mt-3">

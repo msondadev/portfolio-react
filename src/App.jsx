@@ -17,7 +17,7 @@ function App() {
         - w-100: Asegura que ocupe todo el ancho.
         - bg-...: Cambia el fondo de TODA la página según el modo.
       */}
-      <div className={`d-flex flex-column min-vh-100 w-100 ${isDarkMode ? 'bg-dark text-white' : 'bg-light text-dark'}`}>
+      <div className={`d-flex flex-column min-vh-100 w-100 ${isDarkMode ? 'main-bg-dark' : 'main-bg-light'}`}>
         
         <Navigation /> 
         
@@ -32,7 +32,7 @@ function App() {
           </Routes>
         </div>
 
-        {/* 7. Le pasamos el modo al Footer */}
+        {/* Le pasamos el modo al Footer */}
         <Footer isDarkMode={isDarkMode} />
         
       </div>

@@ -1,4 +1,6 @@
-/* Reseteamos el contenedor principal de React */
+/* ==========================================
+#  RESET Y ESTRUCTURA BASE
+   ========================================== */
 #root {
   width: 100%;
   margin: 0;
@@ -6,7 +8,76 @@
   text-align: left;
 }
 
-/* Animación del logo*/
+/* ==========================================
+#  LIGHT MODE
+   ========================================== */
+.main-bg-light {
+  background-color: #f3f2f2 !important; 
+  color: #1e293b !important; /* Un gris muy oscuro (casi negro) para el texto */
+}
+
+/* ==========================================
+#  DARK MODE
+   ========================================== */
+.main-bg-dark {
+  background-color: #0a0a0a !important; 
+  color: #f1f5f9 !important; /* Texto en blanco roto para no cansar la vista */
+}
+
+/* ==========================================
+#  NAVBAR
+   ========================================== */
+.my-navbar-custom {
+  /* AQUÍ cambias el color del Navbar */
+  background-color: #111111 !important; 
+  transition: all 0.4s ease;
+}
+
+/* Color de los links del Navbar */
+.my-navbar-custom .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important; /* Blanco suave */
+  transition: color 0.3s ease;
+}
+
+.my-navbar-custom .nav-link:hover {
+  color: #646cff !important; /* Azul de React al pasar el mouse */
+}
+
+/* Marca/Logo del Navbar */
+.my-navbar-custom .navbar-brand {
+  color: #ffffff !important;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+.my-footer-custom {
+  /* AQUÍ cambias el color del Footer */
+  background-color: #111111 !important; 
+  color: #ffffff !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* Forzar color de iconos en el footer */
+.my-footer-custom a {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* ==========================================
+   ELEMENTOS VISUALES Y ANIMACIONES
+   ========================================== */
+.text-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.theme-btn-hover:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -21,12 +92,8 @@
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
