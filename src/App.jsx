@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { ThemeContext } from './context/Context'; 
 import Navigation from './components/Navbar';
 import Footer from './components/Footer'; 
@@ -12,11 +12,7 @@ function App() {
   const { isDarkMode } = useContext(ThemeContext);
 
   return (
-    <Router>
-      {/*- min-vh-100: Asegura que el fondo cubra todo el alto.
-        - w-100: Asegura que ocupe todo el ancho.
-        - bg-...: Cambia el fondo de TODA la página según el modo.
-      */}
+    
       <div className={`d-flex flex-column min-vh-100 w-100 ${isDarkMode ? 'main-bg-dark' : 'main-bg-light'}`}>
         
         <Navigation /> 
@@ -36,7 +32,7 @@ function App() {
         <Footer isDarkMode={isDarkMode} />
         
       </div>
-    </Router>
+    
   );
 }
 

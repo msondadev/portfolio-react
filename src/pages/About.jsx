@@ -1,8 +1,13 @@
+import miFotoPerfil from '../assets/img/mds-px7.1.jpg';
+import miCV from '../assets/miCV.pdf';
+
 import { Container, Row, Col, Card , Button} from 'react-bootstrap';
 import styled from 'styled-components';
 import { FaGraduationCap, FaCode, FaLightbulb, FaDownload } from 'react-icons/fa';
 import { useContext } from 'react';
 import { ThemeContext } from '../context/Context';
+
+<img src={miFotoPerfil} alt="Programador" className="..." />
 
 // Estilo para la imagen de perfil
 const ProfileImage = styled.img`
@@ -26,8 +31,8 @@ export const About = () => {
         {/* Columna Izquierda: Imagen y redes rápidas */}
         <Col md={5} className="text-center mb-4 mb-md-0">
           <ProfileImage 
-            src="/mds-px7.1.jpg" // Aquí pondrás tu avatar después
-            alt="Tu Nombre" 
+            src={miFotoPerfil} // Aquí pondrás tu avatar después
+            alt="Martin" 
           />
           <div className="mt-3">
             <h3 className="fw-bold">Martin</h3>
@@ -39,7 +44,7 @@ export const About = () => {
                 variant="outline-primary" 
                 size="lg" 
                 className="rounded-pill px-4 shadow-sm fw-bold"
-                href="/C.V..pdf" // Aquí pones el nombre de tu archivo en la carpeta public
+                href={miCV}
                 download="CV_Martin-Sonda.pdf"
               >
                 <FaDownload className="me-2" /> Descargar CV
